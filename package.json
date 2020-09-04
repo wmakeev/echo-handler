@@ -1,6 +1,6 @@
 {
   "name": "@wmakeev/echo-handler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple echo handler",
   "files": [
     "build/src"
@@ -16,6 +16,10 @@
     "build:prod": "rm -rf build/ && npm run lint:fix && npm run compile:prod"
   },
   "author": "Vitaliy V. Makeev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wmakeev/echo-handler.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/blue-tape": "^0.1.33",
