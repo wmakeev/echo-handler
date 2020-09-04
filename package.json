@@ -1,0 +1,34 @@
+{
+  "name": "@wmakeev/echo-handler",
+  "version": "1.0.0",
+  "description": "Simple echo handler",
+  "files": [
+    "build/src"
+  ],
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "compile": "tsc",
+    "compile:prod": "tsc --build tsconfig.prod.json",
+    "build": "npm run lint:fix && npm run compile",
+    "build:prod": "rm -rf build/ && npm run lint:fix && npm run compile:prod"
+  },
+  "author": "Vitaliy V. Makeev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/blue-tape": "^0.1.33",
+    "@types/node": "^12.12.55",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "@typescript-eslint/typescript-estree": "^4.0.1",
+    "blue-tape": "^1.0.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.1",
+    "typescript": "^4.0.2",
+    "typescript-eslint-language-service": "^3.1.0"
+  }
+}
